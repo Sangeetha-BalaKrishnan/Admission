@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
+html{
+	
+	background: url(../IMAGES/a13.jpg) no-repeat center center fixed; 
+	background-attachment:fixed;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	}
+body{
+	font-weight: 300;
+	text-align:center;
+	color:white;
+}
+table {
+/* make the border continuous (without gaps between columns) */
+	 border-collapse: collapse;
+	 /*border: 3px solid #ddd;*/
+	 width: 80%;
+	 
+}
+tr{
+	 vertical-align:bottom;
+	 border-bottom: 1px solid #686868;
+	 
+}
+ td {
+	padding:5px;
+    /*border-bottom: 2px solid #101010;*/
+	text-align: left;
+	font-size:16px;
+	font-weight:500;
+	color:white;
+}
+caption{
+	caption-side:center;
+	font-size:20px;
+	font-weight:BOLD;
+	color:white;
+}
+/*.textbox {
+	background-image:url(images/form_bg.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	width: 230px;
+	color:#333333;
+	padding:3px;
+	margin-right:4px;
+	margin-bottom:8px;
+	font-family:tahoma, arial, sans-serif;
+	
+}*/
+hr { 
+display: block;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: inset;
+border-width: 2px;
+color:white;
+} 
+tr:hover{background-color:#7A7A7A}
+/*tr:nth-child(even){background-color: #f2f2f2}*/
+/*
+#text3 {
+    background: #333;
+    color: #ccc;
+    width: 200px;
+    padding: 6px 15px 6px 35px;
+    border-radius: 20px;
+    box-shadow: 0 1px 0 #ccc inset;
+    transition: 500ms all ease;
+    outline: 0;
+}
+
+#text3:hover {
+    width: 270px;
+}  
+*/
+
+
+.textbox { 
+    width: 200px;
+	color :#080808 ;
+	height:15px;
+	border:0;
+	padding:4px 8px;
+	margin-bottom:2px;
+  } 
+  /***FIRST STYLE THE BUTTON***/
+input#submitbutton {
+border:2px groove #7c93ba;
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+padding: 5px 10px;
+/*give the background a gradient - see cssdemos.tupence.co.uk/gradients.htm for more info*/
+background-color:#6b6dbb; /*required for browsers that don't support gradients*/
+background: -webkit-gradient(linear, left top, left bottom, from(#88add7), to(#6b6dbb));
+background: -webkit-linear-gradient(top, #88add7, #6b6dbb);
+background: -moz-linear-gradient(top, #88add7, #6b6dbb);
+background: -o-linear-gradient(top, #88add7, #6b6dbb);
+background: linear-gradient(top, #88add7, #6b6dbb);
+/*style to the text inside the button*/
+font-family:Andika, Arial, sans-serif; /*Andkia is available at http://www.google.com/webfonts/specimen/Andika*/
+color:#fff;
+font-size:1.1em;
+letter-spacing:.1em;
+font-variant:small-caps;
+/*give the corners a small curve*/
+-webkit-border-radius: 0 15px 15px 0;
+-moz-border-radius: 0 15px 15px 0;
+border-radius: 0 15px 15px 0;
+/*add a drop shadow to the button*/
+-webkit-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+-moz-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input#submitbutton:hover, input#submitbutton:focus {
+color:#edebda;
+/*reduce the spread of the shadow to give a pushed effect*/
+-webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+-moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+}
+
+input#gobutton{
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+padding:5px 5px; /*add some padding to the inside of the button*/
+background:#707070; /*the colour of the button*/
+border:1px solid #080808 ; /*required or the default border for the browser will appear*/
+/*give the button curved corners, alter the size as required*/
+-moz-border-radius: 5px;
+-webkit-border-radius: 10px;
+border-radius: 5px;
+/*give the button a drop shadow*/
+-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 5px rgba(0,0,0, .75);
+/*style the text*/
+color:#f3f3f3;
+font-size:1.1em;
+
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input#gobutton:hover, input#gobutton:focus{
+background-color :#383838 ; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+box-shadow: 0 0 5px rgba(0,0,0, .75);
+}
+.myButton {
+	-moz-box-shadow:inset -2px 1px 0px 0px #899599;
+	-webkit-box-shadow:inset -2px 1px 0px 0px #899599;
+	box-shadow:inset -2px 1px 0px 0px #899599;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:14px;
+	padding:4px 23px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
